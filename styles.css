@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    background-color: #fff;
+    grid-column: 2/5;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: rgb(13, 106, 237);
+    grid-column: 1/2;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.nav-items {
+     display: grid;
+     gap: 48px;
+}
+
+.main, .sub {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.top {
+    grid-row: 1/2;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.avatar-username {
+    display: flex;
+}
+
+.right {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.bottom {
+    grid-row: 2/3;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.welcome-message {
+    display: flex;
+    gap: 5px;
+}
+
+.main-content {
+    padding: 15px;
+    background-color: #d9d9d9;
+    grid-column: 2/5;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.left-main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    gap:10px;
+}
+
+.project-card {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column ;
+    padding: 10px;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.left-content, .announcements, .trending {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcement{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
+}
+
+.trending-column {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+}
+.trending-item-card {
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+.trending-user  {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.announcement-card, .trending-item-card {
+    background-color: #fff;
+}
